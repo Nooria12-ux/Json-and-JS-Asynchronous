@@ -9,14 +9,14 @@
     <h2>JavaScript async / await</h2>
     <h1 id="result"></h1>
     <script>
-      async function add(a, b) {
-        let response = (await a) + b;
+      async function product(a, b) {
+        let response = (await a) * b;
         display(response);
       }
       function display(sum) {
         document.getElementById("result").innerHTML = sum;
       }
-      add(5, 20);
+      product(5, 20);
     </script>
   </body>
 </html>
